@@ -114,6 +114,11 @@ mvn openmrs-sdk:run -DserverId=malawi
 6. Once that has successfully finished, go back into the code and:
     - Git pull
     - Create a tag reflecting that this is the release version (eg. tag as 7.0.0)
+      ```
+      git tag
+      git tag -a 7.0.0 -m "Release 7.0.0"
+      git push origin 7.0.0
+      ```
     - Update all (5) poms to the next snapshot version you want to use (eg. change 7.0.0 to 7.1.0-SNAPSHOT)
     - Build locally and confirm it builds and all of the artifacts have the right new snapshot version
     - Commit and push
